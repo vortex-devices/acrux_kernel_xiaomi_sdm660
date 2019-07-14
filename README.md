@@ -1,5 +1,7 @@
 # Acrux kernel for MI 8 Lite (sdm660) source
 
+![logo](https://telegra.ph/file/d1db0b03507f710adc8c7.png)
+
 ## Branches and informaton
 ```
 Currently, you're on the stable repository. My staging repository can be found on my personal GitHub.
