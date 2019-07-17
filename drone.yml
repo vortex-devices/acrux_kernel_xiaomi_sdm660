@@ -9,7 +9,7 @@ clone:
   depth: 1
 
 steps:
-  - name: beta_kernel
+  - name: stable_kernel
     image: ubuntu:latest
     environment:
       CI_CHANNEL_ID:
@@ -24,7 +24,7 @@ steps:
       - apt-get update && apt-get install -y bison build-essential bc bison curl libssl-dev git zip python
       - git clone https://github.com/nysadev/scripts.git -b master script && cd script
       - bash dronesetup.sh --clang
-      - bash kernel.sh --beta --clang
+      - bash kernel.sh --stable --clang
     when:
       branch:
-        - staging
+        - pie
